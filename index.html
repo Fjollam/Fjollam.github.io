@@ -2,16 +2,36 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=700, initial-scale=-10"> 
     <title>Fjolla Morina</title>
-      <link rel="stylesheet" href="./css/style.css">
-
     <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+        
+    <link rel="stylesheet" href="./css/bootstrap.css">  
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
     <script src="./js/app.js"></script>
 </head>
 <body onload="startTime()">
+    <div class="text-center">
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button> 
+                            <h4 class="modal-title">WARNING: You will be directed to a 3rd party website. To do so, please click below.</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p><a href="https://www.upwork.com/freelancers/~015453fe5d98e246aa">Click here to hire me</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="menu">
         <div class="icon-close">
             <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/close.png">
@@ -22,43 +42,40 @@
             <li><a href="#">Help</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
+            <div class="text-center"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Hire Me</button>
+            </div>
     </div>
-
-    <div class="jumbotron">
+    <div class="jumbotron jumbotron-custom">
         <div class="icon-menu">
-            <i class="fa fa-bars"></i>
-            Menu
+            <i>Menu</i>
+            
         </div>
     </div>
     
     <div class="main-block">
         <div class="avatar-image"></div>
         <h1 class="name-header">Fjolla Morina</h1>
-        <h2 class="sub-header">Gjakove, Kosove</h2>
+        <h2 class="sub-header">Gjakove, Kosovo</h2>
         <div id="clockdate">
             <div class="clockdate-wrapper">
                 <div id="clock"></div>
                 <div id="date"></div>
             </div>
         </div>
-
         <p class ="full-info">
             I am Fjolla Morina. Iam from Gjakova, I graduate at University of International Managment in Prizren. Certification in Java Programming at University. Certification in Web Development by SkillCrush. I like to study brains, computers, and chemistry. I like to sing, dance, sleep, and eat.
         </p>
-
         <h3 class="info-header">Education</h3>
         <ul class="list-info">
             <li>University of International Managment, Prizren</li>
-            <li> "Ukshin Hoti" University</li>
+            
         </ul>
-
         <h3 class="info-header">Work Experience</h3>
         <ul class="list-info">
             <li>Remote web Developer @ UpWork</li>
-            <li>Web Developer @ Golden VAlley Health Center</li>
-            <li>Mobile App Developer @ Universityof California, Merced</li>
+            <li>Web Developer @ Codeacademy</li>
+           
         </ul>
-
         <ul class="socials">
             <li><a class="social-image" href="http://www.facebook.com"><img src="image/face book.png"></a></li>
             <li><a class="social-image" href="http://www.twitter.com"><img src="image/twitter.png"></a></li>
